@@ -55,7 +55,7 @@ const SocialLinksSection = () => {
 
             {/* Instagram Card */}
             <a
-              href="https://instagram.com/the.essayatelier"
+              href="https://www.instagram.com/the.gpessayatelier?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="group animate-fade-in-up [animation-fill-mode:both] block"
@@ -71,7 +71,7 @@ const SocialLinksSection = () => {
                 </h3>
                 
                 <p className="text-sm text-muted-foreground mb-4">
-                  @the.essayatelier
+                  @the.gpessayatelier
                 </p>
                 
                 <p className="text-sm text-foreground/70 leading-relaxed">

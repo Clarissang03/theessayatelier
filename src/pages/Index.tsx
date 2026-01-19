@@ -2,8 +2,9 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-import HowItWorksSection from "@/components/sections/HowItWorksSection";
+import ProcessFlowSection from "@/components/sections/ProcessFlowSection";
 import ServiceDetailsSection from "@/components/sections/ServiceDetailsSection";
+import NotesBankSection from "@/components/sections/NotesBankSection";
 import SocialLinksSection from "@/components/sections/SocialLinksSection";
 import FooterSection from "@/components/sections/FooterSection";
 
@@ -36,8 +37,9 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
-          <HowItWorksSection />
+          <ProcessFlowSection />
           <ServiceDetailsSection />
+          <NotesBankSection />
           <SocialLinksSection />
         </main>
         <FooterSection />

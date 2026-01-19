@@ -1,4 +1,4 @@
-import { Check, Clock, DollarSign, FileText, Sparkles } from "lucide-react";
+import { Check, Clock, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
@@ -24,6 +24,9 @@ const ServiceDetailsSection = () => {
               What You Get
             </h2>
             <div className="section-divider" />
+            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
+              Comprehensive feedback that helps you actually improve — not just a grade with vague comments.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -52,7 +55,7 @@ const ServiceDetailsSection = () => {
                   </div>
 
                   <p className="text-muted-foreground mb-8">
-                    Comprehensive feedback that helps you actually improve — not just a grade with vague comments.
+                    One flat price. No hidden fees. No subscriptions. Just submit your essay and get detailed feedback.
                   </p>
 
                   <Button 
@@ -65,7 +68,7 @@ const ServiceDetailsSection = () => {
                   </Button>
 
                   <p className="text-center text-sm text-muted-foreground mt-4">
-                    Submit via Telegram or Email
+                    Submit via Instagram DM or Email
                   </p>
                 </div>
               </div>
@@ -76,7 +79,7 @@ const ServiceDetailsSection = () => {
               <h3 className="text-2xl font-serif mb-8">Everything Included</h3>
               
               <div className="grid sm:grid-cols-2 gap-4">
-                {features.map((feature, index) => (
+                {features.map((feature) => (
                   <div
                     key={feature}
                     className="flex items-start gap-3 p-4 rounded-sm bg-secondary/30 border border-border/30 hover:border-primary/30 transition-colors"
@@ -89,20 +92,11 @@ const ServiceDetailsSection = () => {
                 ))}
               </div>
 
-              {/* Comparison Box */}
-              <div className="mt-8 p-6 rounded-sm bg-accent/20 border border-accent/30">
-                <h4 className="font-serif text-lg mb-4 flex items-center gap-2">
-                  <DollarSign className="w-5 h-5 text-primary" />
-                  Why This Is Different
-                </h4>
-                <div className="space-y-3 text-sm text-foreground/80">
-                  <p>
-                    <span className="text-primary">vs. Tutoring ($200+/month):</span> Get targeted feedback on actual essays, not generic lessons.
-                  </p>
-                  <p>
-                    <span className="text-primary">vs. School Marking (1-2 months):</span> Feedback in 72 hours, while the content is still fresh.
-                  </p>
-                </div>
+              {/* Additional info */}
+              <div className="mt-8 p-6 rounded-sm bg-primary/5 border border-primary/20">
+                <p className="text-sm text-foreground/80 leading-relaxed">
+                  <span className="font-semibold text-primary">What to expect:</span> Your essay will be returned with detailed inline comments, highlighting areas of strength and specific suggestions for improvement. You'll also receive an overall assessment with actionable next steps.
+                </p>
               </div>
             </div>
           </div>

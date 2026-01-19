@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, Clock, AlertCircle } from "lucide-react";
+import { BookOpen, GraduationCap, Clock, AlertCircle, DollarSign } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -14,7 +14,7 @@ const AboutSection = () => {
             <div className="section-divider" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left Column - Bio */}
             <div className="space-y-6 animate-slide-in-left [animation-fill-mode:both]" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center gap-4 mb-8">
@@ -59,7 +59,7 @@ const AboutSection = () => {
               </p>
             </div>
 
-            {/* Right Column - Visual */}
+            {/* Right Column - Why This Is Different */}
             <div className="animate-slide-in-right [animation-fill-mode:both]" style={{ animationDelay: '0.4s' }}>
               <div className="relative">
                 {/* Decorative Frame */}
@@ -67,36 +67,46 @@ const AboutSection = () => {
                 <div className="absolute -inset-8 border border-primary/10 rounded-sm" />
                 
                 <div className="relative bg-gradient-card rounded-sm p-8 md:p-12 border border-border shadow-card">
-                  <BookOpen className="w-12 h-12 text-primary mb-6" />
+                  <div className="flex items-center gap-3 mb-6">
+                    <DollarSign className="w-8 h-8 text-primary" />
+                    <h4 className="text-xl font-serif">Why This Is Different</h4>
+                  </div>
                   
-                  <h4 className="text-xl font-serif mb-4">What I Offer</h4>
-                  
-                  <ul className="space-y-4">
-                    <li className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-foreground/80">Detailed grammar & structure analysis</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-foreground/80">Argument strength evaluation</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-foreground/80">Specific improvement suggestions</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-foreground/80">72-hour turnaround guaranteed</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-foreground/80">Just $30 per essay</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-6">
+                    <div className="p-5 rounded-sm bg-accent/10 border border-accent/20">
+                      <h5 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <span className="text-primary">vs. Tutoring</span>
+                        <span className="text-xs bg-primary/20 px-2 py-0.5 rounded-full">$200+/month</span>
+                      </h5>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Get targeted feedback on your actual essays, not generic lessons that may not address your specific weaknesses.
+                      </p>
+                    </div>
+
+                    <div className="p-5 rounded-sm bg-accent/10 border border-accent/20">
+                      <h5 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <span className="text-primary">vs. School Marking</span>
+                        <span className="text-xs bg-primary/20 px-2 py-0.5 rounded-full">1-2 months wait</span>
+                      </h5>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Receive feedback in 72 hours while the content is still fresh in your mind. Apply it immediately.
+                      </p>
+                    </div>
+
+                    <div className="p-5 rounded-sm bg-primary/10 border border-primary/20">
+                      <h5 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <span className="text-primary">The Essay Atelier</span>
+                        <span className="text-xs bg-primary/30 px-2 py-0.5 rounded-full text-primary-foreground">$30 · 72h</span>
+                      </h5>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Fast, affordable, comprehensive feedback that actually helps you improve — not just a grade with vague comments.
+                      </p>
+                    </div>
+                  </div>
 
                   <div className="mt-8 pt-6 border-t border-border/50">
-                    <p className="text-sm text-muted-foreground italic">
-                      "Feedback that actually helps you improve — not just a grade."
+                    <p className="text-sm text-muted-foreground italic text-center">
+                      "Feedback that helps you improve — not just a grade."
                     </p>
                   </div>
                 </div>
