@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-library.jpg";
+import RetroGrid from "@/components/ui/retro-grid";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -9,20 +9,19 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Dark academia library with candlelight and antique books"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
-        <div className="absolute inset-0 bg-background/40" />
-      </div>
+      {/* 3D Retro Grid Background */}
+      <RetroGrid 
+        gridColor="#c9a227" 
+        showScanlines={true} 
+        glowEffect={true} 
+      />
+
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background pointer-events-none z-[1]" />
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 border border-primary/20 rounded-full animate-float opacity-30" />
-      <div className="absolute bottom-40 right-20 w-24 h-24 border border-primary/20 rounded-full animate-float opacity-20" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-20 left-10 w-32 h-32 border border-primary/20 rounded-full animate-float opacity-30 z-[1]" />
+      <div className="absolute bottom-40 right-20 w-24 h-24 border border-primary/20 rounded-full animate-float opacity-20 z-[1]" style={{ animationDelay: '2s' }} />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -69,15 +68,15 @@ const HeroSection = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-12 max-w-lg mx-auto animate-fade-in [animation-fill-mode:both]" style={{ animationDelay: '1s' }}>
-            <div className="text-center">
+            <div className="text-center backdrop-blur-sm bg-background/20 rounded-sm p-4">
               <p className="text-3xl md:text-4xl font-serif text-primary">$30</p>
               <p className="text-sm text-muted-foreground mt-1">per essay</p>
             </div>
-            <div className="text-center border-x border-border/50">
+            <div className="text-center border-x border-border/50 backdrop-blur-sm bg-background/20 rounded-sm p-4">
               <p className="text-3xl md:text-4xl font-serif text-primary">72h</p>
               <p className="text-sm text-muted-foreground mt-1">turnaround</p>
             </div>
-            <div className="text-center">
+            <div className="text-center backdrop-blur-sm bg-background/20 rounded-sm p-4">
               <p className="text-3xl md:text-4xl font-serif text-primary">100%</p>
               <p className="text-sm text-muted-foreground mt-1">detailed</p>
             </div>
@@ -86,7 +85,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in [animation-fill-mode:both]" style={{ animationDelay: '1.2s' }}>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in [animation-fill-mode:both] z-10" style={{ animationDelay: '1.2s' }}>
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
           <span className="text-xs tracking-widest uppercase">Scroll</span>
           <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent" />
