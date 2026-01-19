@@ -19,8 +19,8 @@ const ServiceDetailsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="text-primary text-sm tracking-[0.3em] uppercase font-sans">Services</span>
-            <h2 className="text-3xl md:text-5xl font-serif mt-4 mb-6">
+            <span className="text-accent text-sm tracking-[0.3em] uppercase font-sans">Services</span>
+            <h2 className="text-3xl md:text-5xl font-serif mt-4 mb-6 text-white">
               What You Get
             </h2>
             <div className="section-divider" />
@@ -34,23 +34,23 @@ const ServiceDetailsSection = () => {
             <div className="animate-slide-in-left [animation-fill-mode:both]" style={{ animationDelay: '0.2s' }}>
               <div className="relative">
                 {/* Decorative glow */}
-                <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-full" />
+                <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full" />
                 
-                <div className="relative bg-gradient-card rounded-sm border border-primary/30 p-8 md:p-12 shadow-card hover:border-primary/50 transition-colors">
+                <div className="relative bg-gradient-card rounded-sm border border-primary/40 p-8 md:p-12 shadow-card hover:border-primary/60 transition-colors">
                   <div className="flex items-center gap-3 mb-4">
-                    <Sparkles className="w-6 h-6 text-primary" />
-                    <span className="text-sm tracking-widest uppercase text-primary">Essay Feedback</span>
+                    <Sparkles className="w-6 h-6 text-accent" />
+                    <span className="text-sm tracking-widest uppercase text-accent">Essay Feedback</span>
                   </div>
 
                   <div className="flex items-baseline gap-2 mb-6">
-                    <span className="text-5xl md:text-6xl font-serif text-primary">$30</span>
+                    <span className="text-5xl md:text-6xl font-serif text-white">$30</span>
                     <span className="text-muted-foreground">per essay</span>
                   </div>
 
-                  <div className="flex items-center gap-4 py-6 border-y border-border/50 mb-6">
+                  <div className="flex items-center gap-4 py-6 border-y border-border mb-6">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-5 h-5 text-primary" />
-                      <span className="text-foreground/90">72-hour turnaround</span>
+                      <Clock className="w-5 h-5 text-accent" />
+                      <span className="text-foreground">72-hour turnaround</span>
                     </div>
                   </div>
 
@@ -59,7 +59,7 @@ const ServiceDetailsSection = () => {
                   </p>
 
                   <Button 
-                    variant="gold" 
+                    variant="burgundy" 
                     size="lg" 
                     className="w-full"
                     onClick={() => document.getElementById('social')?.scrollIntoView({ behavior: 'smooth' })}
@@ -76,16 +76,16 @@ const ServiceDetailsSection = () => {
 
             {/* Features List */}
             <div className="animate-slide-in-right [animation-fill-mode:both]" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-2xl font-serif mb-8">Everything Included</h3>
+              <h3 className="text-2xl font-serif mb-8 text-white">Everything Included</h3>
               
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature) => (
                   <div
                     key={feature}
-                    className="flex items-start gap-3 p-4 rounded-sm bg-secondary/30 border border-border/30 hover:border-primary/30 transition-colors"
+                    className="flex items-start gap-3 p-4 rounded-sm bg-secondary/50 border border-border hover:border-accent/30 transition-colors"
                   >
-                    <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-primary" />
+                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check className="w-3 h-3 text-accent" />
                     </div>
                     <span className="text-foreground/80 text-sm">{feature}</span>
                   </div>
@@ -93,9 +93,9 @@ const ServiceDetailsSection = () => {
               </div>
 
               {/* Additional info */}
-              <div className="mt-8 p-6 rounded-sm bg-primary/5 border border-primary/20">
+              <div className="mt-8 p-6 rounded-sm bg-accent/5 border border-accent/20">
                 <p className="text-sm text-foreground/80 leading-relaxed">
-                  <span className="font-semibold text-primary">What to expect:</span> Your essay will be returned with detailed inline comments, highlighting areas of strength and specific suggestions for improvement. You'll also receive an overall assessment with actionable next steps.
+                  <span className="font-semibold text-accent">What to expect:</span> Your essay will be returned with detailed inline comments, highlighting areas of strength and specific suggestions for improvement. You'll also receive an overall assessment with actionable next steps.
                 </p>
               </div>
             </div>

@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#"
-            className="font-serif text-xl md:text-2xl text-primary hover:opacity-80 transition-opacity"
+            className="font-serif text-xl md:text-2xl text-accent hover:text-accent/80 transition-colors tracking-wider"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -57,13 +57,13 @@ const Navbar = () => {
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm text-foreground/70 hover:text-primary transition-colors link-underline"
+                className="text-sm text-muted-foreground hover:text-accent transition-colors link-underline"
               >
                 {link.label}
               </button>
             ))}
             <Button
-              variant="gold"
+              variant="burgundy"
               size="sm"
               onClick={() => scrollToSection("#social")}
             >
@@ -93,13 +93,13 @@ const Navbar = () => {
                 <button
                   key={link.label}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-left py-2 text-foreground/70 hover:text-primary transition-colors"
+                  className="text-left py-2 text-muted-foreground hover:text-accent transition-colors"
                 >
                   {link.label}
                 </button>
               ))}
               <Button
-                variant="gold"
+                variant="burgundy"
                 className="mt-4"
                 onClick={() => scrollToSection("#social")}
               >

@@ -30,13 +30,13 @@ const steps = [
 
 const ProcessFlowSection = () => {
   return (
-    <section id="how-it-works" className="py-24 md:py-32 bg-secondary/20 relative">
+    <section id="how-it-works" className="py-24 md:py-32 bg-secondary/30 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <span className="text-primary text-sm tracking-[0.3em] uppercase font-sans">Process</span>
-            <h2 className="text-3xl md:text-5xl font-serif mt-4 mb-6">
+            <span className="text-accent text-sm tracking-[0.3em] uppercase font-sans">Process</span>
+            <h2 className="text-3xl md:text-5xl font-serif mt-4 mb-6 text-white">
               How It Works
             </h2>
             <div className="section-divider" />
@@ -48,7 +48,7 @@ const ProcessFlowSection = () => {
           {/* Steps Timeline */}
           <div className="relative">
             {/* Vertical line for desktop */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/50 via-primary/30 to-transparent" />
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-accent/50 via-accent/20 to-transparent" />
 
             <div className="space-y-12 lg:space-y-0">
               {steps.map((step, index) => (
@@ -63,19 +63,19 @@ const ProcessFlowSection = () => {
                   <div className={`lg:w-1/2 ${index % 2 === 0 ? "lg:text-right lg:pr-12" : "lg:pl-12"}`}>
                     <div className="card-academia relative">
                       {/* Step Number */}
-                      <span className={`absolute -top-4 text-6xl font-serif text-primary/10 group-hover:text-primary/20 transition-colors ${
+                      <span className={`absolute -top-4 text-6xl font-serif text-accent/10 group-hover:text-accent/20 transition-colors ${
                         index % 2 === 0 ? "-right-2 lg:-left-2" : "-left-2"
                       }`}>
                         {step.number}
                       </span>
 
                       {/* Icon - Mobile only */}
-                      <div className="lg:hidden relative z-10 w-14 h-14 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                        <step.icon className="w-6 h-6 text-primary" />
+                      <div className="lg:hidden relative z-10 w-14 h-14 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                        <step.icon className="w-6 h-6 text-accent" />
                       </div>
 
                       {/* Content */}
-                      <h3 className="text-xl font-serif mb-3 relative z-10">{step.title}</h3>
+                      <h3 className="text-xl font-serif mb-3 relative z-10 text-white">{step.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed relative z-10">
                         {step.description}
                       </p>
@@ -83,11 +83,11 @@ const ProcessFlowSection = () => {
                       {/* Channel badges for step 1 */}
                       {step.channels && (
                         <div className={`flex gap-2 mt-4 ${index % 2 === 0 ? "lg:justify-end" : ""}`}>
-                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/20">
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs border border-accent/20">
                             <Instagram className="w-3 h-3" />
                             Instagram
                           </span>
-                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/20">
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs border border-accent/20">
                             <Mail className="w-3 h-3" />
                             Email
                           </span>
@@ -97,8 +97,8 @@ const ProcessFlowSection = () => {
                   </div>
 
                   {/* Center Icon - Desktop only */}
-                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-background border-2 border-primary/50 items-center justify-center group-hover:border-primary group-hover:bg-primary/10 transition-all shadow-lg" style={{ top: `${index * 25 + 5}%` }}>
-                    <step.icon className="w-7 h-7 text-primary" />
+                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-background border-2 border-accent/50 items-center justify-center group-hover:border-accent group-hover:bg-accent/10 transition-all shadow-lg" style={{ top: `${index * 25 + 5}%` }}>
+                    <step.icon className="w-7 h-7 text-accent" />
                   </div>
 
                   {/* Empty space for alternating layout */}
