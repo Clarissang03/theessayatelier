@@ -105,6 +105,10 @@ const SocialLinksSection = () => {
               href="mailto:theessayatelier@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault(); // Prevent the default navigation
+                window.open("mailto:theessayatelier@gmail.com", "_blank", "noopener,noreferrer");
+              }}
               className="group animate-fade-in-up [animation-fill-mode:both] block md:col-span-2 lg:col-span-1"
               style={{ animationDelay: '0.5s' }}
             >
