@@ -103,6 +103,8 @@ const SocialLinksSection = () => {
             {/* Email Card */}
             <a
               href="mailto:theessayatelier@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group animate-fade-in-up [animation-fill-mode:both] block md:col-span-2 lg:col-span-1"
               style={{ animationDelay: '0.5s' }}
             >
