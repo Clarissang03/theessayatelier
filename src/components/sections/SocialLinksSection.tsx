@@ -100,30 +100,6 @@ const SocialLinksSection = () => {
               </div>
             </div>
 
-              <div className="card-academia h-full text-center cursor-pointer">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#FCAF45]/20 border border-[#E1306C]/30 flex items-center justify-center mx-auto mb-6 group-hover:from-[#833AB4]/30 group-hover:via-[#FD1D1D]/30 group-hover:to-[#FCAF45]/30 transition-colors">
-                  <Instagram className="w-7 h-7 text-[#E1306C]" />
-                </div>
-                
-                <h3 className="text-xl font-serif mb-2 group-hover:text-primary transition-colors">
-                  Instagram
-                </h3>
-                
-                <p className="text-sm text-muted-foreground mb-4">
-                  @the.gpessayatelier
-                </p>
-                
-                <p className="text-sm text-foreground/70 leading-relaxed">
-                  Follow along for behind-the-scenes, my law school journey, and the story behind why I started The Essay Atelier.
-                </p>
-
-                <div className="mt-6 flex items-center justify-center gap-2 text-primary text-sm group-hover:gap-3 transition-all">
-                  <span>Follow</span>
-                  <ExternalLink className="w-4 h-4" />
-                </div>
-              </div>
-            </a>
-
             {/* Email Card */}
             <a
               href="mailto:theessayatelier@gmail.com"
