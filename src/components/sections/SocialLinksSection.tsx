@@ -22,7 +22,7 @@ const SocialLinksSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Telegram Card */}
             <a
-              href="https://t.me/TheEssayAtelier"
+              href="https://t.me/TheGPnews"
               target="_blank"
               rel="noopener noreferrer"
               className="group animate-fade-in-up [animation-fill-mode:both] block"
@@ -38,7 +38,7 @@ const SocialLinksSection = () => {
                 </h3>
                 
                 <p className="text-sm text-muted-foreground mb-4">
-                  @TheEssayAtelier
+                  @TheGPnews
                 </p>
                 
                 <p className="text-sm text-foreground/70 leading-relaxed">
@@ -147,7 +147,11 @@ const SocialLinksSection = () => {
               size="xl"
               asChild
             >
-              <a href="https://t.me/TheEssayAtelier" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="mailto:theessayatelier@gmail.com?subject=Essay Submission&body=Hi,%0A%0APlease find my essay attached.%0A%0AName:%0ASchool:%0A"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Submit Your First Essay
               </a>
             </Button>
